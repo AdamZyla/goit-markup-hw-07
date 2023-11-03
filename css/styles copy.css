@@ -1,9 +1,4 @@
-/* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
-   /* cały kod */
- 
- 
- body {
+body {
        font-family: Roboto, sans-serif;
        color: #434455;
        background-color: #ffffff;
@@ -1087,4 +1082,92 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    border: none;
    fill: var(--cloud-color);
 }
+
+
+/* ================================================= MOBILE 👇 ========================================= */
+@media screen and (max-width: 767px) {
+
+.hero {
+height: 432px;
+width: 428px;
+padding: 0;
+margin: 0 ;
+}
+
+.container {
+width: 432px;
+margin: 0 ;
+padding: 0;
+
+}
+ .section-one {
+   color: var(--WHITE, #FFF);
+   text-align: center;
+   font-family: Roboto;
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 40px;
+   letter-spacing: 0.72px;
+   text-transform: capitalize;
+   width: 320px;
+   margin-top: 112px;
+ }
+
+.button-styling {
+   margin-top: 72px;
+}
+
+/*sekcja 2*/
+
+.section-two-styling{
+   display: flex;
+flex-direction: column;
+}
+
+.section-two-padding{
+   padding: 0px;
+
+}
+.list {
+display: flex;
+align-items: center;
+}
+.section-two-strategy{
+   display: none;
+}
+.section-two-strategy-icons{
+   display: none;
+   background-color: none;
+
+}
+
+.section-two-li {
+display: flex;
+flex-direction: column;
+width:  396px;
+margin-top: 96px;
+}
+
+.section-two {
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.72px;
+color: var(--navy-blue-color);
+
+}
+.section-two-text {
+   color: var(--SLATE, #434455);
+   /* Body Medium */
+   font-family: Roboto;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px; /* 150% */
+   letter-spacing: 0.32px;
+   max-width: 396px;
+   max-height: 100%;
 }
