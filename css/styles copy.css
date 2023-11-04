@@ -1229,3 +1229,121 @@ padding: 8px;
    .section-four-header {
     padding-top: 96px;
    }
+
+   /*section 5*/
+
+   .section-five {
+      padding: 96px 16px;
+   }
+
+   .customers-title {
+      font-family: Roboto;
+      color: var(--NAVY-BLUE, #2E2F42);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0.72px;
+      text-transform: capitalize;
+
+      margin-bottom: 72px;
+   }
+   .customers-item {
+      display: flex;
+      width: 190px;
+      height: 88px;
+
+      }
+
+.customers-list {
+   display: grid;
+   column-gap: 16px;
+   grid-template-columns:  auto auto;
+
+ }
+
+ .icon-customers {
+   fill: currentColor;   
+   width: 110px;
+height: 56px;
+}    
+
+/* footer */ 
+ 
+.footer-background {
+   background-color: #2E2F42;
+   width: 428px;
+   height: 100%;
+   margin: 0;
+  
+   }
+
+.footer-text {
+width: 264px;
+height: 72px;
+margin-bottom: 72px;
+}
+
+.footer-link {
+   margin-bottom: 16px;
+   margin-left: 155.12px;
+}
+
+.footer-logo-div {
+margin-right: 0;
+}
+
+.footer-flex {
+   display: block;
+   }
+
+.link {
+   text-decoration: none;
+   display: block;
+}
+
+.logo {
+margin-right: 76px;
+display: inline-block;
+}   
+
+.footer-social-media-title {
+  
+   margin-left: 166px;
+}
+
+.footer-social-media {
+   display: inline-flex;
+   align-items:center ;
+   justify-content: center;
+   gap: 16px;
+   margin-left: 110px;
+   margin-bottom: 72px;
+
+   }
+.subscribe-box {
+display: block;
+margin: 0;
+}
+
+.subscribe-form {
+   display: block;
+   }
+
+.subscribe-footer {
+display: inline-block;
+
+ 
+}
+
+.subscribe-button {
+display: block;
+margin-top: 16px;
+margin-left: 0;
+}
+
+
+
+
+
+}
