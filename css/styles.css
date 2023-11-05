@@ -388,10 +388,13 @@ border-bottom: 1px solid var(--cornflower-color);
 margin: 0 auto;
 }
 
-.menu-header {
+.menu-header { 
 display: flex;
 }
 
+.menu-header-ul { 
+   display: flex;
+   }
 .menu-header-navigation {
    display: flex;
    align-items: center;}
