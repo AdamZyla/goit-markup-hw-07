@@ -361,11 +361,7 @@ color: #434455;
    gap: 24px;
 }
 
-.container {
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
-}
+
 
 .header {
 border-bottom: 1px solid var(--cornflower-color);
@@ -625,7 +621,10 @@ align-items: baseline;
 .customers-list {
 display: flex;
 gap: 24px;
-justify-content: center;
+justify-items: start;
+justify-content: start;
+align-items: center;
+align-content: center;
 }
 
 .customers-item {
@@ -1087,11 +1086,17 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* ================================================= MOBILE 👇 ========================================= */
 @media screen and (max-width: 767px) {
 
+   
 .hero {
 width: 428px;
 height: 432px;
 padding: 0;
 margin: 0;
+
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+
+
+
 }
 
 .container {
@@ -1327,22 +1332,27 @@ margin: 0;
 }
 
 .subscribe-form {
-   display: block;
+   display:flex;
+   flex-direction: column;
    }
 
 .subscribe-footer {
-display: inline-block;
+display: flex;
+align-items: center;
+justify-content: center;
 
- 
 }
+
 
 .subscribe-button {
-display: block;
-margin-top: 16px;
-margin-left: 0;
+width: 165px;
+margin: 0 auto;;
 }
 
-
+.input-costam {
+   width: 398px;
+  
+}
 
 
 
