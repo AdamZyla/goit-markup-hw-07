@@ -1214,6 +1214,9 @@ padding: 8px;
    margin-bottom: 96px;
    }
 
+/* section 3 */
+
+
    .section-tree-styling{
    display: none;
    }
@@ -1349,8 +1352,8 @@ display: inline-block;
    gap: 16px;
    margin-left: 110px;
    margin-bottom: 72px;
-
    }
+
 .subscribe-box {
 display: block;
 margin: 0;
@@ -1410,38 +1413,52 @@ margin-left: 0;
 
 /*Big Mac*/
 
-/*.menu-hamburger {
- /  display: flex;
+.menu-hamburger {
+  display: flex;
    margin-top: 24px ;
    margin-right: 16px;
    margin-bottom: 24px;
-   
-           }*/
+           }
 
 .button-hamburger {
 border: none;
 background-color: var(--white-color);
         }
-        
-     
-        
-
-
-  
-           }
+      
+}
  
 
 
 
-/* ==================================================================================================================================================================================================== TABLET 👇 ========================================= */
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================================================================================================================================================================== TABLET 👇 ============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================ */
+
+
+
+
+
+
+
+
 
 
 
 @media screen and (min-width: 768px) {
 
-   body {
-      background-color: black;
-    }
+body {
+   background-color: black;
+   min-width: 768px;
+   }
 
 
   @media (min-device-pixel-ratio: 2),
@@ -1449,14 +1466,111 @@ background-color: var(--white-color);
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
 
-   .hero {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+.hero {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+   }
+}
+
+body {
+   font-family: Roboto, sans-serif;
+   color: #434455;
+   background-color: #ffffff;
+}
+
+/* section 2 */
+
+.section-two-strategy{
+   display: none;
+}
+
+.section-two-strategy-icons{
+   display: none;
+   background-color: none;
+}
+
+.section-two-styling {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+margin-top: 96px;
+row-gap: 72px;
+}
+
+.section-two-li {
+width: calc((100% - 24px) / 2);
+}
+
+/* section 3 */
+
+.section-tree-styling{
+   display: none;
    }
 
+   /* section 4 */
 
+  /* .section-four-list-styling {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      row-gap: 108px;
+   } */
 
-  }
+   .section-four-list-styling {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      row-gap: 64px;
 
+   }
 
+   .section-four-text-bg {
+      display: flex;
+            width: calc((100% - 24px) / 2);
+            max-width: 264px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--white-color);
+            border-radius: 0px 0px 4px 4px;
+            list-style: none;
+            box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);   
+            margin: 0;
+          
+   }
+
+   /* section 5 */
+
+   .section-five {
+      padding-top: 96px;
+   }
+   .customers-title {
+      text-align: center;
+      color: var(--navyblue-color);
+      font-family: Roboto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.11;
+      letter-spacing: 0.72px;
+      text-transform: capitalize;
+      margin-bottom: 72px;
+   }
+
+   .customers-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      row-gap: 72px;
+      
+   }
+
+   .customers-item {
+      flex-basis: calc((100% - 48px) / 3);
+      height: 88px;
+      max-width: 168px;
+
+}
 
 
 
