@@ -1631,5 +1631,107 @@ width: calc((100% - 24px) / 2);
 }
 
 
+}
+
+
+
+/* ====================================================================================================================================================================================================================================
+
+desktop 👇 
+
+==================================================================================================================================================================================================================================== */
+
+@media screen and (min-width: 1158px) {
+
+   body {
+      background-color: #ffffff;
+      min-width: 1158px;
+      }
+
+   .menu-hamburger {
+         display: none;
+     }
+ 
+ .js-menu-container {
+     display: none;
+ }
+ 
+ 
+/* section 2 */ 
+
+      .section-two-strategy {
+         box-sizing: border-box;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 264px;
+         height: 112px;
+         flex-shrink: 0;
+         padding: 24px 100px ;
+         border-radius: 4px;
+         margin-bottom: 8px;
+         background: var(--CLOUD, #F4F4FD);
+         }
+
+         .section-two-styling {
+            display: flex;
+            margin-top: 120px;
+          }
+
+          .section-two-li {
+            display: flex;
+            flex-direction: column;
+            justify-content:left;
+            width: calc((100% - 72px) / 4);
+         }
+         .section-two-strategy-icons {
+            display: flex;
+            align-items: center;
+          }
+
+/* section 3*/ 
+
+.list {
+   list-style: none;
+   display: flex;
+  
+   gap: 24px;   
 
 }
+.section-tree-styling {
+   padding-bottom: 120px;
+   padding-top: 0;
+   min-width: 1158px;
+   height: 500px;
+}
+
+.section-three-header {
+   color: var(--NAVY-BLUE, #2E2F42);
+   font-family: Roboto;
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 40px;
+   letter-spacing: 0.72px;
+   line-height: 1.11;
+   text-align: center;
+   text-transform: capitalize;
+   margin-bottom: 72px;
+}
+
+.section-tree-styling-ul {
+   display: flex;
+   gap: 24px;   
+}
+.section-tree-empty {
+   width: calc((100% - 48px) / 3);
+
+}
+
+
+
+
+
+
+}
+
