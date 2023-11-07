@@ -1793,14 +1793,16 @@ desktop 👇
 
       /* Footer */
 
-      .footer-background {
-      background-color: #2E2F42;
-      padding-top: 120px;
-      padding-bottom: 100px;        
-      margin-top: 120px;
+.footer-background {
+   background-color: #2E2F42;
+   padding: 100px 0;  
+ 
 }
 
 
+.subscribe-box {
+   margin-right: 0;
+   }
 
 
 
