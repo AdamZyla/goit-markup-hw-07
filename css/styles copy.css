@@ -1896,6 +1896,7 @@ body {
        }
    }
 
+/* section 2 */
 
 .section-two-strategy {
    box-sizing: border-box;
@@ -1937,9 +1938,9 @@ body {
    font-size: 20px;
    font-style: normal;
    font-weight: 500;
-   line-height: 24px; section-two
-   letter-spacing: 0.4em;
-   text-align: start;
+   line-height: 24px;
+   margin-left: 0;
+   
 }
 
 .section-two-padding {
@@ -2000,6 +2001,12 @@ body {
    padding-bottom: 120px;
 }
 
+.section-four-bg {
+   background-color: #F4F4FD;
+   width: 100%;
+}
+
+
  /* section 5 */
 
 
@@ -2032,9 +2039,62 @@ body {
    padding: 100px 0;  
 }
 
-.subscribe-box {
-   margin-right: 0;
+.footer-flex {
+   min-width: 100%;
+   display: flex;
+   margin: 0 auto;
+   row-gap: 0;
+   gap: 0;
+   padding-left: 156px;
 }
+
+.footer-social-media {
+   display: flex;
+   
+}
+
+.subscribe-box {
+   margin: none;
+   padding-left: 80px;
+ 
+   }
+
+.subscribe-label{
+      margin-left: 0;
+   }
+   
+.subscribe-form {
+   display: flex;
+   }
+
+.footer-tablet {
+      padding-left: 108px;
+   }
+
+.subscribe-button {
+      display: flex;
+      min-width: 165px;
+      height: 40px;
+      border: none;
+      border-radius: 4px;
+      background-color: var(--iris-color);
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: var(--WHITE, #FFF);
+      text-align: center;
+      cursor: pointer;
+      }
+
+
+
+
+
+
+
 
 
 
