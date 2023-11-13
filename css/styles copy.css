@@ -1108,7 +1108,7 @@ MOBILE 👇
 }
 
 .container {
-   max-width: 767px;
+   width: 428px;
    padding: 0 15px;
    margin: 0 auto;
    }
@@ -1267,7 +1267,8 @@ MOBILE 👇
 
 
 .section-five {
-   padding: 96px 16px;
+   padding: 96px 0;
+   margin: 0;
 }
 
 .customers-title {
@@ -1290,7 +1291,7 @@ MOBILE 👇
 .customers-list {
    display: flex;
    flex-wrap: wrap;
-   gap: 24px;
+   gap: 16px;
    justify-content: center;
    row-gap: 72px;
 }
@@ -1321,6 +1322,7 @@ MOBILE 👇
    line-height: 1.5;
    letter-spacing: 0.02em;
    width: max(264px); 
+   margin: 0;
 }
 
 .footer-link {
@@ -1357,6 +1359,7 @@ MOBILE 👇
 .footer-social-media-title {
    display: flex;
    justify-content: center;
+   margin-top: 0;
 }
 
 .footer-social-media {
@@ -1379,6 +1382,7 @@ MOBILE 👇
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-top: 0;
 }
 
 
@@ -1399,13 +1403,12 @@ MOBILE 👇
    width: 100%;
    height: 70px;
    margin: 0 auto;
+   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 1px 6px rgba(46, 47, 66, 0.08);
+   border-bottom: 1px solid var(--cornflower-color);
 }
 
-.header {
-   border-bottom: 1px solid var(--cornflower-color);
-   margin: 0 auto;
-}
-   
 .menu-header { 
    display: flex;
    justify-content: space-between;
@@ -1590,10 +1593,11 @@ MOBILE 👇
    
 .hamburger-social-media-list {
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-start;
    margin-top: 48px;
    margin-bottom: 40px;
    margin-left: 40px;
+   gap: 56px;
 }
    
 .hamburger-social-media-li {
@@ -1630,6 +1634,86 @@ MOBILE 👇
 }
 
 
+/* Modal mobile */
+
+.modal-window {
+   position: fixed;
+   inset: 0 0 auto;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 1;
+   pointer-events: all;
+   background: var(--NAVY-BLUE-modal,
+    rgba(46, 47, 66, 0.40));
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   padding: 72px 24px 24px 24px; 
+   }
+
+.modal-body{
+   width: 284px; /*320 -2x18*/
+   min-height: 584px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1);
+   flex-shrink: 0;
+   border-radius: 4px;
+   background: var(--DAIRY, #FCFCFC);
+   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   padding: 72px 24px 24px 24px;
+}
+
+.modal-text {
+   display: flex;
+   align-items: center;
+   font-family: Roboto;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px; 
+   letter-spacing: 0.32px; 
+   color: var(--navy-blue-color);
+   width: 252px; /*284 - 32*/
+   height: 24px;
+   margin-bottom: 16px;
+   margin-top: 0;
+   text-align: center
+}
+
+.label-elements-input {
+   width: 100%;
+   height: 40px;
+   border: 1px solid rgba(46, 47, 66, 0.4);
+   border-radius: 4px;
+   background-color: transparent; 
+   padding-left: 38px;
+   outline: transparent;
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   gap: 24px;
+}
+
+.modal-x-button {
+   position: absolute;
+   top: 24px;
+   right: 24px;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--cornflower-color);
+   border: 1px solid rgba(0, 0, 0, 0.10);
+   cursor: pointer;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 
@@ -2014,7 +2098,15 @@ body {
    padding-bottom: 120px;
 }
 
-
+.section-two-text {
+   font-family: Roboto;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.32px;
+   color: var(--slate-color)
+}
 
 /* section 3*/ 
 
@@ -2060,6 +2152,10 @@ body {
   padding-bottom: 72px;
 }
 
+.pictures-signature{
+   padding-top: 0;
+}
+
 .sec-sec-four {
    width: 1158px;
    margin-top: 120px;
@@ -2090,8 +2186,9 @@ body {
 }
   
 .container {
-   width: 100%;
+   width: 1158px;
    height: 100%;
+   padding: 0;
 }
 
 
@@ -2102,16 +2199,14 @@ body {
 
 .footer-background {
    background-color: #2E2F42;
-   padding: 100px 0;  
+   
 }
 
 .footer-flex {
-   min-width: 100%;
-   display: flex;
-   margin: 0 auto;
-   row-gap: 0;
-   gap: 0;
-   padding-left: 156px;
+   flex-wrap: nowrap;
+   align-items: baseline;
+   gap: 0px;
+   row-gap: 0px;
 }
 
 .footer-social-media {
