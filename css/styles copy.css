@@ -1079,14 +1079,16 @@ MOBILE 👇
 
 
 @media screen and (min-width: 320px) and (max-width: 767px)
-
-   @media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) 
-   {
-      .hero {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);}
+{
+@media 
+(min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) 
+{
+   .hero {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
    }
+}
 
 
    
@@ -1099,8 +1101,7 @@ MOBILE 👇
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
 }
 
 .container {
@@ -1242,7 +1243,7 @@ flex-direction: column;
 
 .section-four-bg {
    background-color: var(--cloud-color);
-   max-width: 428px;
+   max-width: 767px;
    margin: 0;   
 }
 
@@ -1294,54 +1295,66 @@ flex-direction: column;
  
 .footer-background {
    background-color: #2E2F42;
-   width: 428px;
+   width: 100%;
    height: 100%;
    margin: 0;
   
    }
 
 .footer-text {
-   width: 264px;
-   height: 72px;
-   margin-bottom: 72px;
-   margin-left: 80px;
+   color: var(--cloud-color);
+   font-family: Roboto;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   width: max(264px); 
 
 }
 
 .footer-link {
-   margin-bottom: 16px;
-   margin-left: 155.12px;
+   display: flex;
+   justify-content: center;
+
 }
 
+.logo {
+   font-family: Raleway, sans-serif;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;          
+   color: #4d5ae5;
+   font-style: normal;
+   margin-right: 0;
+}   
+
 .footer-logo-div {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
    margin-right: 0;
 }
 
 .footer-flex {
-   display: block;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 72px;
    }
 
-.link {
-   text-decoration: none;
-   display: block;
-}
-
-.logo {
-   margin-right: 76px;
-   display: inline-block;
-}   
-
 .footer-social-media-title {
-  margin-left: 166px;
+   display: flex;
+   justify-content: center;
 }
 
 .footer-social-media {
-   display: inline-flex;
-   align-items:center ;
+   display: flex;
    justify-content: center;
    gap: 16px;
-   margin-left: 110px;
-   margin-bottom: 72px;
+
 }
 
 .subscribe-box {
@@ -1610,7 +1623,7 @@ flex-direction: column;
 
 
 
-
+}
 
 
 
