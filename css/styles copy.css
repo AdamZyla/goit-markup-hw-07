@@ -35,6 +35,9 @@ ul {
    --white-color: #ffffff;
    --dairy-color: #fcfcfc;
 
+   --my-transition-duration: 250ms;
+   --my-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
    }
        
 .main-header {
@@ -1137,8 +1140,7 @@ MOBILE 👇
 
 .section-two-styling{
    display: flex;
-flex-direction: column; 
-
+   flex-direction: column; 
 }
 
 .section-two-padding{
@@ -1201,6 +1203,8 @@ flex-direction: column;
    margin-bottom: 96px;
    }
 
+
+
 /* section 3 */
 
 
@@ -1215,7 +1219,15 @@ flex-direction: column;
    margin-right: 82px;
 }
 
+
    /*sekcja 4*/
+
+
+.pictures-signature {
+   padding-bottom: 32px;
+   padding-top: 0;
+   text-align: center;
+}
 
 .section-four-padding {
    padding-top: 0;
@@ -1228,7 +1240,6 @@ flex-direction: column;
    gap: 72px;
 }
    
-
 .section-four-text-bg {
    background-color: var(--white-color);
    border-radius: 0px 0px 4px 4px;
@@ -1251,7 +1262,9 @@ flex-direction: column;
    padding-top: 96px;
 }
 
+
    /*section 5*/
+
 
 .section-five {
    padding: 96px 16px;
@@ -1266,14 +1279,12 @@ flex-direction: column;
    line-height: 40px;
    letter-spacing: 0.72px;
    text-transform: capitalize;
-
    margin-bottom: 72px;
-   }
+}
 .customers-item {
    width: calc((100% - 16px) / 2);
    height: 88px;
    width: 190px;
-
 }
 
 .customers-list {
@@ -1282,8 +1293,7 @@ flex-direction: column;
    gap: 24px;
    justify-content: center;
    row-gap: 72px;
-
- }
+}
 
  .icon-customers {
    fill: currentColor;   
@@ -1291,15 +1301,16 @@ flex-direction: column;
    height: 56px;
 }    
 
+
 /* footer */ 
  
+
 .footer-background {
    background-color: #2E2F42;
    width: 100%;
    height: 100%;
    margin: 0;
-  
-   }
+}
 
 .footer-text {
    color: var(--cloud-color);
@@ -1310,13 +1321,11 @@ flex-direction: column;
    line-height: 1.5;
    letter-spacing: 0.02em;
    width: max(264px); 
-
 }
 
 .footer-link {
    display: flex;
    justify-content: center;
-
 }
 
 .logo {
@@ -1343,7 +1352,7 @@ flex-direction: column;
    flex-direction: column;
    align-items: center;
    gap: 72px;
-   }
+}
 
 .footer-social-media-title {
    display: flex;
@@ -1354,7 +1363,6 @@ flex-direction: column;
    display: flex;
    justify-content: center;
    gap: 16px;
-
 }
 
 .subscribe-box {
@@ -1365,7 +1373,7 @@ flex-direction: column;
 .subscribe-form {
    display:flex;
    flex-direction: column;
-   }
+}
 
 .subscribe-footer {
    display: flex;
@@ -1386,6 +1394,7 @@ flex-direction: column;
 
 /* header */ 
 
+
 .main-header {
    width: 100%;
    height: 70px;
@@ -1395,22 +1404,22 @@ flex-direction: column;
 .header {
    border-bottom: 1px solid var(--cornflower-color);
    margin: 0 auto;
-   }
+}
    
-   .menu-header { 
+.menu-header { 
    display: flex;
    justify-content: space-between;
-   }
+}
    
-   .menu-header-ul { 
-      display: flex;
-      }
+.menu-header-ul { 
+   display: flex;
+}
       
-   .menu-header-navigation {
-      display: flex;
-      align-items: center;}
-      
-
+.menu-header-navigation {
+   display: flex;
+   align-items: center;
+}
+    
 .link-padding {
    display: flex;
    height: 24px;
@@ -1427,6 +1436,7 @@ flex-direction: column;
 
 
 /*Big Mac*/
+
 
 .menu-hamburger {
    display: flex;
@@ -1493,11 +1503,11 @@ flex-direction: column;
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: #e7e9fc;
+   background-color: var(--cornflower-color);
    border: 1px solid rgba(0, 0, 0, 0.1);
    padding: 0;
    cursor: pointer;
-   transition: background-color var(--mytransition-duration) var(--mytransition-timing-function), border var(--mytransition-duration) var(--mytransition-timing-function);
+   transition: background-color var(--my-transition-duration) var(--my-transition-timing-function), border var(--my-transition-duration) var(--my-transition-timing-function);
 }
    
 .hamburger-close-button:hover,
@@ -1537,7 +1547,7 @@ flex-direction: column;
    letter-spacing: 0.72px;
    text-transform: capitalize;
    color: var(--navyblue-color);
-   transition: color var(--mytransition-duration) var(--mytransition-timing-function);
+   transition: color(--my-transition-duration) var(--my-transition-timing-function);
 }
    
 .hamburger-nav-link:hover,
@@ -1599,7 +1609,7 @@ flex-direction: column;
    display: flex;
    align-items: center;
    justify-content: center;
-   transition: background-color var(--mytransition-duration) var(--mytransition-timing-function);
+   transition: background-color var(--my-transition-duration) var(--my-transition-timing-function);
 }
    
 .hamburger-social-media-link:hover,
