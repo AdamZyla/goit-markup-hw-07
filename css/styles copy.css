@@ -1108,7 +1108,7 @@ MOBILE 👇
 }
 
 .container {
-   width: 428px;
+   width: 100%;
    padding: 0 15px;
    margin: 0 auto;
    }
@@ -1441,6 +1441,9 @@ MOBILE 👇
    display: none;
 }
 
+.input-costam {
+   width: 290px;
+}
 
 /*Big Mac*/
 
@@ -1740,8 +1743,36 @@ margin-bottom: 8px;
 }
 
 
+@media screen and (min-width: 428px) and (max-width: 767px) {
+
+   .container {
+       width: 428px;
+   }
+
+.input-costam {
+   width: 398px;
+}
+
+.modal-body {
+   width: 392px;
+}  
+
+.hamburger-div {
+   margin: auto;
+   max-width: 428px;  
+}
+
+
 
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1788,6 +1819,7 @@ body {
    margin: 0 auto;
 }
 
+
 /* header */
 
 .main-header {
@@ -1813,6 +1845,7 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
 /* hamburger */
 
+.js-menu-container,
 .menu-hamburger,
 .hamburger-nav-link,
 .hamburger-close-button,
@@ -2022,6 +2055,7 @@ body {
 }
 
 
+.js-menu-container,
 .menu-hamburger,
 .hamburger-nav-link,
 .hamburger-close-button,
@@ -2030,9 +2064,7 @@ body {
    display: none;
 }
  
-.js-menu-container {
-   display: none;
-}
+
 
 
 
@@ -2236,7 +2268,8 @@ body {
 
 .footer-background {
    background-color: #2E2F42;
-   
+   margin: 0;
+ 
 }
 
 .footer-flex {
