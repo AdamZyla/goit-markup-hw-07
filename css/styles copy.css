@@ -2045,7 +2045,6 @@ body {
    display: flex;
    flex-basis: auto;
    align-items: center;
-   padding: 24px 0;
 }
 
 .menu-header-ul { 
