@@ -1262,6 +1262,10 @@ MOBILE 👇
    padding-top: 96px;
 }
 
+.section-four-text{
+   margin-top: 0;
+}
+
 
    /*section 5*/
 
@@ -1638,34 +1642,37 @@ MOBILE 👇
 
 .modal-window {
    position: fixed;
-   inset: 0 0 auto;
-   min-height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
+   min-height: 100vh;
+   min-width: 100vw;
    opacity: 1;
-   pointer-events: all;
+   top: 0;
+   left: 0;
    background: var(--NAVY-BLUE-modal,
     rgba(46, 47, 66, 0.40));
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   padding: 72px 24px 24px 24px; 
    }
 
 .modal-body{
-   width: 284px; /*320 -2x18*/
-   min-height: 584px;
    position: absolute;
+   width: 290px;
+   height: 600px;
+   flex-shrink: 0;
+   border-radius: 4px;
+   background: var(--dairy-color);
+   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%) scale(1);
-   flex-shrink: 0;
-   border-radius: 4px;
    background: var(--DAIRY, #FCFCFC);
    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
    padding: 72px 24px 24px 24px;
+   
 }
 
 .modal-text {
@@ -1678,7 +1685,7 @@ MOBILE 👇
    line-height: 24px; 
    letter-spacing: 0.32px; 
    color: var(--navy-blue-color);
-   width: 252px; /*284 - 32*/
+   width: 258px; /*290 - 32*/
    height: 24px;
    margin-bottom: 16px;
    margin-top: 0;
@@ -1697,9 +1704,26 @@ MOBILE 👇
    gap: 24px;
 }
 
+.modal-form{
+margin-bottom: 8px;
+}
+
+.modal-form-label {
+   font-family: Roboto;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   color: var(--lightslate-color);
+   margin-bottom: 4px;
+   line-height: 1.17;
+   letter-spacing: 0.04em;
+   display: block;
+}
+
 .modal-x-button {
    position: absolute;
    top: 24px;
+   bottom:24px;
    right: 24px;
    width: 24px;
    height: 24px;
@@ -1879,9 +1903,13 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
    border-radius: 0px 0px 4px 4px;
    list-style: none;
    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);   
-   margin: 0;
+   margin-top: 0;
+   gap: 0;
 }
 
+.pictures-signature {
+   padding-top: 0;
+}
 
    /* section 5 */
 
@@ -1982,6 +2010,18 @@ body {
 
 }
 
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people_office@2x.jpg);
+        ;
+    }
+}
+
+
 .menu-hamburger,
 .hamburger-nav-link,
 .hamburger-close-button,
@@ -2035,16 +2075,7 @@ body {
    background-repeat: no-repeat;
    }
 
-   @media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) {
-       .main-section {
-           background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-               url(../images/people_office@2x.jpg);
-           ;
-       }
-   }
+
 
 /* section 2 */
 
@@ -2090,7 +2121,7 @@ body {
    font-weight: 500;
    line-height: 24px;
    margin-left: 0;
-   
+   margin-top: 0;  
 }
 
 .section-two-padding {
@@ -2105,7 +2136,9 @@ body {
    font-weight: 400;
    line-height: 24px;
    letter-spacing: 0.32px;
-   color: var(--slate-color)
+   color: var(--slate-color);
+   margin-top: 0;
+  
 }
 
 /* section 3*/ 
@@ -2150,16 +2183,17 @@ body {
 
 .section-four-header {
   padding-bottom: 72px;
+  margin-bottom: 0;
 }
 
 .pictures-signature{
    padding-top: 0;
+   margin-top: 0;
 }
 
 .sec-sec-four {
    width: 1158px;
    margin-top: 120px;
-   padding-top: 120px;
    padding-bottom: 120px;
 }
 
@@ -2168,6 +2202,9 @@ body {
    width: 100%;
 }
 
+.section-four-text-bg {
+   gap: 0;
+}
 
  /* section 5 */
 
@@ -2256,12 +2293,5 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 }
+
